@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    margin: 4em;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 4.1em;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+nav ul li a.active:before{
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+}
+
